@@ -78,6 +78,8 @@ void ProgressToClinicalEvent::execute() {
       Model::TREATMENT_COVERAGE->get_probability_to_be_treated(
           person->location(), person->age(), Model::CONFIG->treatment_age_classes_upper(), Model::CONFIG->treatment_adjustments()); // modified for ASTC (May 2025)
 
+      //std::cout << p_treatment << std::endl; // Debugging line to check treatment probability
+
 
 
   if (p <= p_treatment) {

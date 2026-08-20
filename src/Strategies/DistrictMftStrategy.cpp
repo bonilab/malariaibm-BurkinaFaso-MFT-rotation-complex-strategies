@@ -66,9 +66,16 @@ Therapy* DistrictMftStrategy::get_therapy(Person* person) {
     if (pr <= sum) { return Model::CONFIG->therapy_db()[mft->therapies[ndx]]; }
   }
 
+  if (std::abs(sum - pr) <= 1e-6) { // change made 10th June 2025 to circumvent the false error when sum is very close to 1.0 but not exactly 1.0
+    // If we are here,  return the last therapy
+    std::cout<< "Warning: Random number " << pr << " is very close to (but not exactly equal to) sum: " << std::to_string(sum) << "returning last therapy." << std::endl;
+    return Model::CONFIG->therapy_db()[mft->therapies.back()];
+  } 
+
   // Since we should ways return above, throw an error if we get here
   throw std::runtime_error("Scanned for therapy without finding a match: "
                            + this->name()
                            + ", district: " + std::to_string(district)
-                           + ", pr: " + std::to_string(pr));
+                           + ", pr: " + std::to_string(pr)
+                           + ", sum: " + std::to_string(sum));
 }

@@ -8,8 +8,10 @@ This repository contains the main individual-based simulation code (C++) used fo
 - **Operating System:**  Ubuntu 24.04
 - **Compiler:** GNU G++ (13.3.0)
 - **CPU** : Single-core execution (no multithreading)
-- **RAM** :
-- **Disk** : 
+- **RAM** : 25 GB for large-scale runs simulating 25% of Burkina Faso's ~23 million population
+- **Disk** : ~40 MB per output SQLite file
+- **Dependencies**
+
 
 
 

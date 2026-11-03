@@ -78,7 +78,7 @@ The input files used for calibration and intervention studies are as follows:
 
 **Study** : https://github.com/sarit-adh/ART-R-Preparation-Burkina-Faso/tree/main/Studies/input_files
 
-Each simulation run for intervention study takes from 20 to 25 hours to complete on high performance computing system.
+Each simulation run for intervention study takes from 20 to 25 hours to complete on high performance computing system, and upto 45 hours on a standard desktop computer.
 
 The complete simulation output dataset can be downloaded from the following link
 
@@ -91,4 +91,6 @@ https://github.com/sarit-adh/ART-R-Preparation-Burkina-Faso/tree/main/Studies/ou
 The python code used for analysis can be downloaded from
 
 https://github.com/sarit-adh/ART-R-Preparation-Burkina-Faso/tree/main/Studies
+
+If the processed dataset is used, the analysis and visualizations created for the paper can be reproduced within couple of hours.
 

@@ -49,6 +49,8 @@ make
 ```
 Replace /path/to/vcpkg/ with your local vcpkg path.
 
+The build process should take less than 5 minutes on a modern machine
+
 ### Run the simulation
 
 ```bash
